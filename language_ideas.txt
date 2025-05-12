@@ -1,0 +1,20 @@
+when getting a stack error there should be a quick visual indicator of where your code is calling into library (if you assume that the bug is more likely comming from your code than the library) you can quickly find it, go to line of error and start debugging
+
+
+
+
+it would be cool if in the lsp, when showing type based completions, that if can also start showing you type based completions using util like functions defined in other projects, (by having a background job that recursively indexes any same language file in the code-projects directory)
+
+
+some sort of print locals macro that can be called inside a functions that nicely displays something like:
+    called: <funcName> with params:
+        <param_name>: <param_value> 
+        ...
+
+    local_vars:
+        <var_name>: <var_value> 
+        ...
+
+    <file>: <line>
+    
+    a bit of color and style
